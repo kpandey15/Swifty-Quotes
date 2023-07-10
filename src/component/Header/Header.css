@@ -1,0 +1,90 @@
+/* Header.css */
+.header-container {
+  background-color: #222831;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-symbol {
+  font-size: 48px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header-title::before,
+.header-title::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+.header-title::before {
+  margin-right: 10px;
+}
+
+.header-title::after {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+  .header-symbol {
+    font-size: 36px;
+  }
+
+  .header-title::before,
+  .header-title::after {
+    width: 60px;
+  }
+}
+
+.header-subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 320px) {
+  .header-title {
+    font-size: 24px;
+  }
+
+  .header-symbol {
+    font-size: 36px;
+  }
+}
+
+
